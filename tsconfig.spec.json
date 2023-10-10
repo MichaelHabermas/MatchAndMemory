@@ -1,0 +1,24 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        "app/**/*.spec.ts",
+        "app/**/*.spec.tsx",
+        "app/**/*.test.ts",
+        "app/**/*.test.tsx",
+        "app/**/*.spec.js",
+        "app/**/*.spec.jsx",
+        "app/**/*.test.js",
+        "app/**/*.test.jsx",
+    ],
+    "compilerOptions": {
+        "module": "CommonJS",
+        "jsx": "react",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "types": [
+            "react-native",
+            "react-test-renderer",
+            "node"
+        ]
+    }
+}

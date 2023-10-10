@@ -1,0 +1,57 @@
+{
+    "extends": "airbnb-base",
+    "defaultSeverity": "warning",
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order",
+        "stylelint-declaration-block-no-ignored-properties",
+        "stylelint-declaration-strict-value",
+        "@isnotdefined/stylelint-plugins"
+    ],
+    "rules": {
+        "@isnotdefined/no-obsolete": true,
+        "alpha-value-notation": null,
+        "color-function-notation": "modern",
+        "color-hex-case": "lower",
+        "color-hex-length": null,
+        "declaration-block-semicolon-newline-before": "never-multi-line",
+        "declaration-no-important": true,
+        "indentation": 4,
+        "max-line-length": [
+            150,
+            {
+                "ignore": ["comments"]
+            }
+        ],
+        "no-empty-source": true,
+        "number-leading-zero": "always",
+        "order/order": [
+            "custom-properties",
+            "dollar-variables",
+            "at-variables",
+            "declarations",
+            "rules",
+            "at-rules",
+            "less-mixins"
+        ],
+        "plugin/declaration-block-no-ignored-properties": true,
+        "scale-unlimited/declaration-strict-value": "color",
+        "selector-class-pattern": null,
+        "selector-id-pattern": null,
+        "selector-max-universal": 0,
+        "selector-no-qualifying-type": [
+            true,
+            {
+                "ignore": ["attribute"]
+            }
+        ],
+        "selector-pseudo-element-colon-notation": "double",
+        "string-quotes": "single",
+        "value-no-vendor-prefix": [
+            true,
+            {
+                "ignoreValues": ["fill-available"]
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "lib/*": ["common/*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": false,
+    "declaration": false,
+    "downlevelIteration": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "es2021"
+    ],
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "typeRoots": [
+      "./app/types",
+      "./node_modules/expo__*",
+      "./node_modules/@expo/*",
+      "./node_modules/@react-native-community",
+      "./node_modules/@types",
+      "./node_modules/@types/react",
+      "./node_modules/@types/node"
+    ],
+    "types": [
+      "react",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/__tests__/*"
+  ],
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "**/*.ts*",
+    "**/*.d.ts*",
+    "./app/types/env.d.ts"
+  ]
+}
+
